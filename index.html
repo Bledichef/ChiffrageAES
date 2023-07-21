@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" lang="Fr">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="chiffrage.js"></script>
+</head>
+<body>
+    <!-- Formulaire Siret -->
+    <div>
+        <h1>Formulaire Siret</h1>    
+        <input type="text" id="siret" placeholder="Siret">
+        <button class="Bouton" type="button" onclick="encryptAndGenerateLink()">Encrypt</button>
+    </div>
+  
+    <!-- Résultat Siret déchiffré -->
+    <div>
+        <h1>Siret Chiffré</h1>
+        <div id="encryptedCustNum"></div>
+    </div>
+
+    <!-- Formulaire Code -->
+    <div>
+        <h1>Formulaire Code</h1>    
+        <input type="text" id="encryptedUrl" placeholder="Encrypted URL">
+        <button class="Bouton1" type="button" onclick="decrypt()">Decrypt</button>
+    </div>
+  
+    <!-- Résultat Code déchiffré -->
+    <div>
+        <h1>Code Déchiffré</h1> 
+        <div id="decryptedCustNum"></div>
+    </div>
+</body>
+</html>
