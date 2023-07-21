@@ -33,7 +33,7 @@ function generateDecryptionURL(encryptedCustomerNumber, key, iv) {
   const encodedKey = encodeURIComponent(key);
   const encodedIV = encodeURIComponent(iv);
 
-  return `https://example.com/decrypt.html?enc=${encodedEncryptedCustomerNumber}&key=${encodedKey}&iv=${encodedIV}`;
+  return `/creer-votre-compte/?code=1123&enc=${encodedEncryptedCustomerNumber}&key=${encodedKey}&iv=${encodedIV}`;
 }
 
 function decrypt() {
@@ -52,4 +52,15 @@ function decrypt() {
   const decryptedCustomerNumber = decryptCustomerNumber(encryptedCustomerNumber, encryptedKey, iv);
 
   document.getElementById("decryptedCustNum").textContent = decryptedCustomerNumber;
+}
+
+let copyBtn = document.querySelector(".Copy");
+
+copyBtn.addEventListener("click", copyToClipboard);
+
+function copyToClipboard() {
+  let Input = document.getElementById("encryptedUrl");
+  Input.select();
+  document.execCommand("copy");
+  alert("Copied to clipboard");
 }

@@ -8,14 +8,14 @@
 </head>
 <body>
     <!-- Formulaire Siret -->
-    <div>
-        <h1>Formulaire Siret</h1>    
+    <div class="Point">
+        <h1>Formulaire Siret</h1>    </div>
         <input type="text" id="siret" placeholder="Siret">
         <button class="Bouton" type="button" onclick="encryptAndGenerateLink()">Encrypt</button>
     </div>
   
     <!-- Résultat Siret déchiffré -->
-    <div>
+    <div >
         <h1>Siret Chiffré</h1>
         <div id="encryptedCustNum"></div>
     </div>
@@ -23,14 +23,21 @@
     <!-- Formulaire Code -->
     <div>
         <h1>Formulaire Code</h1>    
+  
         <input type="text" id="encryptedUrl" placeholder="Encrypted URL">
         <button class="Bouton1" type="button" onclick="decrypt()">Decrypt</button>
     </div>
-  
+    <button class="Copy" type="button" onclick="copyToClipboard()">Copy</button>
     <!-- Résultat Code déchiffré -->
     <div>
         <h1>Code Déchiffré</h1> 
         <div id="decryptedCustNum"></div>
     </div>
+    <div id="Encrypted URL">
+
+    </div>
+
 </body>
+
+
 </html>

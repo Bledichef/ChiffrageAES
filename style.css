@@ -8,26 +8,64 @@ html {
     border: 7px double #2E1AA4;
     border-radius: 26px;
     padding: 10px;
+    background: #CE5937;
+background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+background: -webkit-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
  }
  
   h1 {
     font-family: 'Noto Sans';
     font-size: 1.4rem;
     text-align: center;
-    color: #008cfa;
+    color: #fff;
  }
 
  #decryptedCustNum {
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
-    color: #fff;
+    color: #080808;
     text-shadow: 0px 4px 4px rgba(241, 0, 0, 0.25);
  }
- #encryptedCustNum {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-    text-shadow: 0px 4px 4px rgba(241, 0, 0, 0.25);
- }
+
+
+ .Point {
+    margin-bottom: 20%;
+    border-radius: 26px;
+    border: 7px double #2E1AA4;
+    border-radius: 26px;
+    background: #CE5937;
+background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+background: -webkit-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+    color: white;
+    height: 100%;
+    width: 100%;
+  
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+  @-webkit-keyframes move_eye { from { margin-left:-12%; } to { margin-left:9%; }  }
+          @keyframes move_eye { from { margin-left:-12%; } to { margin-left:9%; }  }
+
+
+          #encryptedCustNum {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(241, 0, 0, 0.25);
+            
+         }
+
+
+         .flip-2-ver-right-fwd {
+            -webkit-animation: flip-2-ver-right-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                    animation: flip-2-ver-right-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }
+
+   .Copy{
+      margin-left: 30%;
+   }
