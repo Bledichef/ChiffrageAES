@@ -114,3 +114,11 @@ ul {
    margin-top: 10%;
    margin-left: 20%;
 }
+.ErrorMessage{
+   text-shadow: #FC0 1px 0 10px;
+   color: red;
+   font-weight: bold;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 10%;
+}

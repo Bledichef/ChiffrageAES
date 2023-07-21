@@ -87,8 +87,8 @@ function Link() {
   if (selectedOption) {
 
     const selectedValue = selectedOption.value;
-    console.log("Option choisie : " + selectedValue);
-    console.log(selectedValue.concat(document.getElementById("encryptedUrl").value));
+
+
     
     // Sélectionnez l'élément avec l'ID "URL"
     const urlElement = document.getElementById("URL");
@@ -98,6 +98,14 @@ function Link() {
     urlElement.classList.add("antique-bg");
     // Vous pouvez maintenant utiliser la valeur choisie pour effectuer d'autres opérations
   } else {
+    const errorElement = document.getElementsByClassName("ErrorMessage")[0]; // Sélectionner le premier élément avec la classe "ErrorMessage"
+    errorElement.innerHTML = "Aucun Préfixe Choisi!";
+      // // Sélectionnez l'élément avec l'ID "URL"
+  const urlElement = document.getElementById("URL");
+
+  // // Définissez la valeur de l'élément et ajoutez la classe "antique-bg"
+  urlElement.innerHTML = generateDecryptionURL(encryptedCustomerNumber, key, iv);
+  urlElement.classList.add("antique-bg");
     console.log("Aucune option sélectionnée.");
   }
 };
