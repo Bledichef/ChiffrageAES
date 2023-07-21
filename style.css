@@ -67,5 +67,10 @@ background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
         }
 
    .Copy{
-      margin-left: 30%;
+      width: 50%;
+      margin-top: 10%;
+      margin-left: 20%;
+   }
+   button{
+      border-radius: 10%;
    }
