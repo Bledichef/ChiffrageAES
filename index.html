@@ -4,18 +4,17 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8" lang="Fr">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
-    <script src="chiffrage.js"></script>
 </head>
 <body>
     <!-- Formulaire Siret -->
     <div class="Point">
-        <h1>Formulaire Siret</h1>    </div>
+        <h1>Formulaire Siret</h1>     </div>
         <input type="text" id="siret" placeholder="Siret">
         <button class="Bouton" type="button" onclick="encryptAndGenerateLink()">Encrypt</button>
-    </div>
+   
   
     <!-- Résultat Siret déchiffré -->
-    <div >
+    <div>
         <h1>Siret Chiffré</h1>
         <div id="encryptedCustNum"></div>
     </div>
@@ -27,7 +26,7 @@
         <input type="text" id="encryptedUrl" placeholder="Encrypted URL">
         <button class="Bouton1" type="button" onclick="decrypt()">Decrypt</button>
     </div>
-    <button class="Copy" type="button" onclick="copyToClipboard()">Copy</button>
+    <button class="Copy" type="button">Copy</button>
     <!-- Résultat Code déchiffré -->
     <div>
         <h1>Code Déchiffré</h1> 
@@ -37,7 +36,6 @@
 
     </div>
 
+    <script src="chiffrage.js"></script>
 </body>
-
-
 </html>

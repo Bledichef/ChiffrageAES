@@ -54,21 +54,20 @@ function decrypt() {
   document.getElementById("decryptedCustNum").textContent = decryptedCustomerNumber;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  let copyBtn = document.querySelector(".Copy");
 
-  copyBtn.addEventListener("click", copyToClipboard);
+let copyBtn = document.querySelector(".Copy");
 
-  function copyToClipboard() {
-    let Input = document.getElementById("encryptedUrl");
-    Input.select();
-    document.execCommand("copy");
-    copyBtn.innerHTML = "Copied";
-    copyBtn.classList.add("copied"); // Ajoute la classe "copied" au bouton
+function copyToClipboard() {
+  let Input = document.getElementById("encryptedUrl");
+  Input.select();
+  document.execCommand("copy");
+  copyBtn.innerHTML = "Copied";
+  copyBtn.classList.add("copied");
 
-    setTimeout(function() {
-      copyBtn.innerHTML = "Copy";
-      copyBtn.classList.remove("copied"); // Supprime la classe "copied" du bouton
-    }, 1000);
-  }
-});
+  setTimeout(function() {
+    copyBtn.innerHTML = "Copy";
+    copyBtn.classList.remove("copied");
+  }, 1000);
+}
+
+copyBtn.addEventListener("click", copyToClipboard);
