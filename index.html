@@ -10,9 +10,11 @@
     <!-- Formulaire Siret -->
     <div class="Point">
         <h1>Formulaire Siret</h1>     </div>
+
         <input type="text" id="siret" placeholder="Siret">
         <button class="Bouton" type="button" onclick="encryptAndGenerateLink()">Encrypt</button>
-   
+
+
   
     <!-- Résultat Siret déchiffré -->
     <div>
@@ -32,12 +34,35 @@
     <div>
         <h1>Code Déchiffré</h1> 
         <div id="decryptedCustNum"></div>
-    </div></section>
-    <article>
+    </div>
+    <form class="LinkBase">
+        <label for="choix">Choisissez une option :</label>
+        <ul>
+          <li>
+            <input type="radio" name="choix" value="https://ca-cpourmoi.com" id="option1">
+            <label for="option1">CCPM</label>
+          </li>
+          <li>
+            <input type="radio" name="choix" value="https://mbp.test:8443" id="option2">
+            <label for="option2">Local</label>
+          </li>
+          <li>
+            <input type="radio" name="choix" value="https://klesia-avantages.dev.hapluspme.com" id="option3">
+            <label for="option3">MBP Dev</label>
+          </li>
+        </ul>
+        <br>
+        <button type="button" value="Valider" class="Source" onclick="Link()">Valider</button>
+  </form>
+</section>
+
+<article>
         <h1>URL</h1>
     <div id="URL" class="URL">
 
+
     </div>
+    <button class="Copy2" type="button" onclick="copyToClipboard0()">Copy</button>
     </article>
     <script src="chiffrage.js"></script>
 </body>

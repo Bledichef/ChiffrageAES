@@ -102,3 +102,15 @@ background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
       background-color: antiquewhite;
 
     }
+    .Source{
+      width: 50%;
+      margin-left: 20%;
+    }
+ul {
+   font-weight: bold;
+}
+.Copy2{
+   width: 50%;
+   margin-top: 10%;
+   margin-left: 20%;
+}
