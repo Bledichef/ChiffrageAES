@@ -3,7 +3,13 @@ html {
     background: #001e46;
     display: flex;
  }
-  body {
+ body{
+   max-width: 30%;
+   display: block;
+   margin-left: 38%;
+   margin-top: 10%;
+ }
+  section {
     margin: auto;
     border: 7px double #2E1AA4;
     border-radius: 26px;
@@ -32,11 +38,9 @@ background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
 
  .Point {
     margin-bottom: 20%;
-    border-radius: 26px;
     border: 7px double #2E1AA4;
     border-radius: 26px;
-    background: #CE5937;
-background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+   background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
 background: -webkit-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
 background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
     color: white;
@@ -84,4 +88,17 @@ background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
    .Copy.copied {
       color: red;
       font-weight: bold;
+    }
+    .URL{
+      padding: 15px;
+    }
+    article{
+      word-wrap: break-word;
+   max-width: 100%;
+      margin-top: 10%;
+    }
+    #URL.antique-bg {
+      border: 7px double #2E1AA4;
+      background-color: antiquewhite;
+
     }

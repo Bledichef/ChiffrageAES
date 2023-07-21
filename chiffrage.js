@@ -23,6 +23,13 @@ function encryptAndGenerateLink() {
   const customerNumber = document.getElementById("siret").value;
   const { encryptedCustomerNumber, key, iv } = encryptCustomerNumber(customerNumber);
 
+  // Sélectionnez l'élément avec l'ID "URL"
+  const urlElement = document.getElementById("URL");
+
+  // Définissez la valeur de l'élément et ajoutez la classe "antique-bg"
+  urlElement.innerHTML = generateDecryptionURL(encryptedCustomerNumber, key, iv);
+  urlElement.classList.add("antique-bg");
+
   document.getElementById("encryptedCustNum").textContent = encryptedCustomerNumber;
   document.getElementById("encryptedUrl").value = generateDecryptionURL(encryptedCustomerNumber, key, iv);
   document.getElementById("decryptedCustNum").textContent = "";
