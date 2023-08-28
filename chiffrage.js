@@ -95,7 +95,8 @@ function Link() {
     const urlElement = document.getElementById("URL");
 
     // Définissez la valeur de l'élément et ajoutez la classe "antique-bg"
-    urlElement.innerHTML = selectedValue.concat(document.getElementById("encryptedUrl").value);
+    urlElement.innerHTML = selectedValue + generateDecryptionURL(encryptedCustomerNumber, key, iv);
+
     urlElement.classList.add("antique-bg");
     // Vous pouvez maintenant utiliser la valeur choisie pour effectuer d'autres opérations
   } else {
