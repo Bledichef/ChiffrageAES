@@ -40,7 +40,7 @@ function generateDecryptionURL(encryptedCustomerNumber, key, iv) {
   const encodedKey = encodeURIComponent(key);
   const encodedIV = encodeURIComponent(iv);
 
-  return `/creer-votre-compte/?code=1123&enc=${encodedEncryptedCustomerNumber}&key=${encodedKey}&iv=${encodedIV}`;
+  return `/creer-votre-compte/?code=eeW5qWbP2EZG8G5VHT4AEuUrt55yPk46ehP3tmhn&enc=${encodedEncryptedCustomerNumber}&key=${encodedKey}&iv=${encodedIV}`;
 }
 
 function decrypt() {
@@ -88,7 +88,8 @@ function Link() {
 
     const selectedValue = selectedOption.value;
 
-
+    const errorElement = document.getElementsByClassName("ErrorMessage")[0]; // Sélectionner le premier élément avec la classe "ErrorMessage"
+    errorElement.innerHTML = "";
     
     // Sélectionnez l'élément avec l'ID "URL"
     const urlElement = document.getElementById("URL");
